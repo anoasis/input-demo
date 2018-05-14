@@ -1,0 +1,14 @@
+{
+  "type": "record", 
+  "name": "Person",
+  "fields": [
+      {"name": "firstName", "type": "string"},
+      {"name": "lastName", "type": "string"},
+      {"name": "homeAddress", "type": "string", "aliases": ["address"]},
+      {"name": "workAddress", "type": "string"},
+      {"name": "salary", "type": "double", "default":"0.0"},
+      {"name": "salaryCurrency", "type": "string", "default" : null},
+      {"name": "workHours", "type": "int", "default":"0"},
+      {"name": "numOfdependents", "type": "int", "default":"0"}
+  ]
+}
