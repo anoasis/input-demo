@@ -32,7 +32,7 @@ public class AvroController {
         ObjectMapper om = new ObjectMapper();
         Person_v2 p2 = om.readValue(json, Person_v2.class);
         PersonInput pi = new PersonInput();
-        pi.setId(1);
+        pi.setMethodId("person");
         List<Input> inputs = InputMapper.getInputs(p2);
         pi.setInputs(inputs);
         return pi;
@@ -53,7 +53,7 @@ public class AvroController {
         ObjectMapper om = new ObjectMapper();
         Person p2 = om.readValue(json, Person.class);
         PersonInput pi = new PersonInput();
-        pi.setId(1);
+        pi.setMethodId("person");
         List<Input> inputs = InputMapper.getInputs(p2);
         pi.setInputs(inputs);
         return pi;

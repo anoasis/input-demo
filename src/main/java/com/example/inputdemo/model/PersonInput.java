@@ -6,16 +6,16 @@ import java.util.List;
 
 public class PersonInput {
 
-    int id;
+    String methodId;
 
     List<Input> inputs;
 
-    public int getId() {
-        return id;
+    public String getMethodId() {
+        return methodId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setMethodId(String id) {
+        this.methodId = id;
     }
 
     public List<Input> getInputs() {

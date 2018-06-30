@@ -16,7 +16,7 @@ public class InputController {
     public @ResponseBody
     PersonInput covertToReq(@RequestBody Person p){
         PersonInput pr = new PersonInput();
-        pr.setId(1);
+        pr.setMethodId("person");
         pr.setInputs(InputMapper.getInputs(p));
         return pr;
     }
@@ -27,7 +27,7 @@ public class InputController {
         int index = 1;
         for(Person p: list){
             PersonInput pr = new PersonInput();
-            pr.setId(index++);
+            pr.setMethodId("person");
             pr.setInputs(InputMapper.getInputs(p));
             prl.add(pr);
         }

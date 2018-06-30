@@ -8,8 +8,6 @@ import com.example.inputdemo.model.input.UnitCode;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import java.math.BigDecimal;
-
 public class AnnotationMain {
     public static void main(String[] args) throws JsonProcessingException {
 
@@ -30,7 +28,7 @@ public class AnnotationMain {
         //p.setWorkHours(80);
 
         PersonInput pr = new PersonInput();
-        pr.setId(1);
+        pr.setMethodId("person");
         pr.setInputs(InputMapper.getInputs(p));
 
         ObjectMapper om = new ObjectMapper();
